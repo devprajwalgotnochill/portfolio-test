@@ -5,6 +5,9 @@ import { FaLinkedin } from "react-icons/fa";
 const linkClass =
   "rounded-md px-3 py-2 text-gray-100 hover:bg-white/7 hover:text-white";
 function Nav() {
+  const handleClick = () => {
+    alert("no cats for u getlost ! mewo ! 'shhh' bequite 'shush'");
+  };
   return (
     <>
       <nav className="flex justify-between p-3 text-start items-center bg-slate-900 text-white ">
@@ -26,12 +29,12 @@ function Nav() {
               <a href="#">About Me</a>
             </li>
             <li className={linkClass}>
-              <a href="#">Hobbies </a>
+              <a href="#hobobies">Hobbies </a>
             </li>
             <li className={linkClass}>
               <a href="#">Contact me </a>
             </li>
-            <li className={linkClass}>
+            <li className={linkClass} onClick={handleClick}>
               <a href="#">Cats</a>
             </li>
           </ul>
