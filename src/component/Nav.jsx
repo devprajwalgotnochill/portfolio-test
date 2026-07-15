@@ -1,10 +1,13 @@
 import { FaGithubAlt } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 
+// {AI css}
+const linkClass =
+  "rounded-md px-3 py-2 text-gray-100 hover:bg-white/7 hover:text-white";
 function Nav() {
   return (
     <>
-      <nav className="flex justify-between p-3 text-start items-center bg-slate-900 text-white">
+      <nav className="flex justify-between p-3 text-start items-center bg-slate-900 text-white ">
         <div></div>
         <div className="justify-center items-center flex">
           <img
@@ -14,24 +17,21 @@ function Nav() {
           />
         </div>
         <div>
-          <ul className="flex gap-8">
-            <li>
-              <h1 className=""></h1>
-            </li>
-            <li>
+          <ul className="flex gap-8 ">
+            <li className={linkClass}>
               <a href="#">Home</a>
             </li>
 
-            <li>
+            <li className={linkClass}>
               <a href="#">About Me</a>
             </li>
-            <li>
+            <li className={linkClass}>
               <a href="#">Hobbies </a>
             </li>
-            <li>
+            <li className={linkClass}>
               <a href="#">Contact me </a>
             </li>
-            <li>
+            <li className={linkClass}>
               <a href="#">Cats</a>
             </li>
           </ul>
