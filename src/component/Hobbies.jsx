@@ -1,7 +1,7 @@
 function Hobbies() {
   return (
     <section id="hobobies">
-      <ul className="text-copy pl-4 space-y-1 list-outside list-disc">
+      <ul className="text-copy pl-4 space-y-1 list-outside list-disc text-black marker:text-pink-800">
         <li>fUser Name : nonightnostarnomoon</li>
         <li>oEnter Password : ******</li>
         <li>ofe!n</li>

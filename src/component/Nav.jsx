@@ -1,33 +1,32 @@
 import { FaGithubAlt } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
+import profile_img from "../assets/download.jfif";
 
-// {AI css}
+// {tailwindcsswebsite css}
 const linkClass =
-  "rounded-md px-3 py-2 text-gray-100 hover:bg-white/7 hover:text-white";
+  "rounded-md px-3 py-2 text-gray-100 hover:bg-white/7 hover:font-bold";
 function Nav() {
   const handleClick = () => {
     alert("no cats for u getlost ! mewo ! 'shhh' bequite 'shush'");
   };
   return (
     <>
-      <nav className="flex justify-between p-3 text-start items-center bg-slate-900 text-white ">
+      <nav className="flex justify-between p-3 text-start items-center bg-slate-700 text-white w-full shadow-md">
         <div></div>
-        <div className="justify-center items-center flex">
+        <div className="justify-center items-center text-center  ">
           <img
-            className="rounded-full h-10 w-auto"
-            src="https://i.pinimg.com/736x/3b/1a/80/3b1a80df61b41345de244d52b4617923.jpg"
+            className="rounded-full h-13 w-auto ml-7 border-3 border-t-blue-700 border-b-yellow-400 border-l-pink-600"
+            src={profile_img}
             alt="Are you serious"
           />
+          <p>Prajwal Gharti</p>
         </div>
         <div>
-          <ul className="flex gap-8 ">
+          <ul className="flex gap-7">
             <li className={linkClass}>
-              <a href="#">Home</a>
+              <a href="#home">Home</a>
             </li>
 
-            <li className={linkClass}>
-              <a href="#">About Me</a>
-            </li>
             <li className={linkClass}>
               <a href="#hobobies">Hobbies </a>
             </li>
@@ -47,10 +46,11 @@ function Nav() {
         <div></div>
         {/* login button*/}
 
-        <div>
+        <div className="text-shadow-fuchsia-300 text-white">
           <a
             href="https://github.com/devprajwalgotnochill"
-            className="text-center items-center flex gap-1"
+            title="Visit my GitHub profile"
+            className="text-center items-center flex gap-1 hover:underline"
           >
             <FaGithubAlt />
             <p>Github</p>
@@ -59,7 +59,8 @@ function Nav() {
         <div>
           <a
             href="https://www.linkedin.com/in/devprajwol-gharti-8065093a6/"
-            className="text-center items-center flex gap-1"
+
+            className="text-center items-center flex gap-1 hover:underline"
           >
             <FaLinkedin />
             <p>LinkedIn</p>
