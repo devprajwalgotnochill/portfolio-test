@@ -2,6 +2,7 @@ import "./App.css";
 import Nav from "./component/Nav";
 import Quote from "./component/Quote";
 import Home from "./component/Home";
+import Footer from "./component/Footer"
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       {/* Body*/}
       <Home />
       <Quote />
+      <Footer />
     </>
   );
 }
